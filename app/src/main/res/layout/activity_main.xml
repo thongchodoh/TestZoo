@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zoo" />
+
+    <ImageButton
+        android:id="@+id/btnhorse"
+        android:layout_width="186dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#fafafa"
+        android:onClick="clickSound"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/horse" />
+
+    <ImageButton
+        android:id="@+id/btnelephant"
+        android:layout_width="187dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#fafafa"
+        android:onClick="clickEle"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btnhorse"
+        app:layout_constraintStart_toEndOf="@+id/btnhorse"
+        app:layout_constraintTop_toTopOf="@+id/btnhorse"
+        app:srcCompat="@drawable/elephant" />
+
+    <ImageButton
+        android:id="@+id/btnlion"
+        android:layout_width="187dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#fafafa"
+        android:onClick="clickLion"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btnelephant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnelephant"
+        app:layout_constraintTop_toTopOf="@+id/btnelephant"
+        app:srcCompat="@drawable/lion" />
+
+    <ImageButton
+        android:id="@+id/btngo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#fafafa"
+        android:onClick="clickMap"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhorse"
+        app:srcCompat="@drawable/go" />
+
+    <ImageButton
+        android:id="@+id/btncall"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#fafafa"
+        android:onClick="clickMobile"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btngo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btngo"
+        app:layout_constraintTop_toTopOf="@+id/btngo"
+        app:srcCompat="@drawable/call" />
+
+</android.support.constraint.ConstraintLayout>
